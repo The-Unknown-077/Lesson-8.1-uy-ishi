@@ -1,5 +1,10 @@
 import UsersCard from '@/components/UsersCard';
-import { memo } from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Users",
+  description: "All about users",
+};
 
 export default async function Users() {
     const res = await fetch('https://dummyjson.com/users');
